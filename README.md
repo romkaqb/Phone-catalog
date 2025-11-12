@@ -1,9 +1,49 @@
-# React TypeScript Starter Pack
+# Phone Catalog
 
-To use this template click `Use this template`
+A responsive online catalog that displays a collection of gadgets with detailed information, sorting, filtering, and pagination features. The project allows users to browse available gadgets, view product details, and easily navigate through categories.
 
-### Available Scripts
+## 🚀 Live Preview
+[Live Demo](https://romkaqb.github.io/Phone-catalog/)
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+## 🎨 Design Reference
+Example: [Figma Design](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog--V2--Original-Dark?node-id=15870-2116&t=xFdmuhORUG5oEkVQ-0)
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## 🧰 Technologies Used
+
+## Core
+- React
+- TypeScript
+- SCSS / SASS
+
+# UI/UX
+- React Router
+- Swiper
+
+## 🏁 Getting Started
+
+Follow these steps to set up the project locally:
+
+## Clone the repository:
+- git clone https://github.com/your-username/project-name.git
+- cd project-name
+
+## Install dependencies:
+- npm install
+or
+yarn install
+
+## Run the project locally:
+- npm start
+or
+yarn start
+
+## 🌟 Features
+
+- Responsive Design: Optimized for different screen sizes and devices, responses on width 320px, 640px, 1200px, 1440px,
+- Navigation react-router-dom library is used in the application to enable navigation between multiple pages and URL-based search parameters saved when navigating
+- Favorites & Cart: adding products to favorites or shopping cart, with total price calculation,
+- Product Filtering: Filter products by capacity and color inside product card.
+- Sorting: Sort products based on criterias: year, price, alphabeticaly.
+- Pagination: Navigate through large lists of products, opportunity to choose number of items per page, and number of pages depends on this.
+- Scroll to Top Button: Easily return to the top of the page.
+- Loader: Indicates loading status for a better user experience.

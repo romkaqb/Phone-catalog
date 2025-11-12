@@ -1,21 +1,16 @@
-import React from 'react';
-import './App.scss';
-
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
-
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
+import { Outlet, useLocation } from 'react-router-dom';
+import '../src/App.scss';
+import { Header } from './Components/Header/Header';
+import { Footer } from './Components/Footer/Footer';
 
 export const App: React.FC = () => {
+  const location = useLocation();
+
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
+    <div className="App">
+      <Header />
+      <Outlet />
+      {location.pathname !== '/menu' && <Footer />}
     </div>
   );
 };
